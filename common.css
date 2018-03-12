@@ -1,0 +1,26 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 20px;
+}
+
+input, textarea {
+    padding: 10px;
+}
+
+label {
+    margin-bottom: 20px;
+}
+
+button
+{
+    width: 200px;
+    padding: 10px;
+    font-size: 24px;
+    border-radius: 4px;
+    background-color: #8B1501;
+    color: white;
+    cursor: pointer;
+}
+
+@media (min-width: 576px) {
+}

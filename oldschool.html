@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Old School</title>
+    <link href="common.css" rel="stylesheet">
+    <style>
+        label, input, textarea {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        input, textarea {
+            width: calc(100vw - 66px);
+        }
+
+        button {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+        
+        @media (min-width: 576px) {
+        }
+    </style>
+</head>
+<body>
+    <label for="first-name">First Name
+        <input type="text" id="first-name" name="first_name">
+    </label>
+    <label for="last-name">Last Name
+        <input type="text" id="last-name" name="last_name">
+    </label>
+    <label for="profile-image">Profile Image
+        <input type="file" id="profile-image" name="profile_image">
+    </label>
+    <label for="email">Email
+        <input type="email" id="email" name="email">
+    </label>
+    <label for="phone">Phone
+        <input type="text" id="phone" name="phone">
+    </label>
+    <label for="web-site">Web site
+        <input type="text" id="web-site" name="web_site">
+    </label>
+    <label for="quote">Quote
+        <textarea id="quote" name="quote"></textarea>
+    </label>
+    <button>Save</button>
+</body>
+</html>
