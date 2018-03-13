@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Old School</title>
     <link href="common.css" rel="stylesheet">
     <style>
-        label, input, textarea {
+        label,
+        input,
+        textarea {
             display: block;
-            margin-left: auto;
-            margin-right: auto;
+            text-align: center;
         }
 
-        input, textarea {
+        input,
+        textarea {
             width: calc(100vw - 66px);
+        }
+
+        #profile-image {
+            padding: 50px 0 50px 0;
+            margin: 0 auto;
         }
 
         button {
@@ -21,12 +29,31 @@
             margin-right: auto;
             display: block;
         }
-        
+
         @media (min-width: 576px) {
-            
+            input,
+            textarea {
+                width: calc(100% - 66px);
+            }
+
+            label {
+                width: 50%;
+            }
+
+            .right {
+                position: absolute;
+                left: 50%;
+                margin-top: -75px;
+            }
+
+            button {
+                position: absolute;
+                left: 70%;
+            }
         }
     </style>
 </head>
+
 <body>
     <label for="first-name">First Name
         <input type="text" id="first-name" name="first_name">
@@ -34,21 +61,22 @@
     <label for="last-name">Last Name
         <input type="text" id="last-name" name="last_name">
     </label>
-    <label for="profile-image">Profile Image
+    <label for="profile-image" class="right">Profile Image
         <input type="file" id="profile-image" name="profile_image">
     </label>
     <label for="email">Email
         <input type="email" id="email" name="email">
     </label>
-    <label for="phone">Phone
+    <label for="phone" class="right">Phone
         <input type="text" id="phone" name="phone">
     </label>
     <label for="web-site">Web site
         <input type="text" id="web-site" name="web_site">
     </label>
-    <label for="quote">Quote
+    <label for="quote" class="right">Quote
         <textarea id="quote" name="quote"></textarea>
     </label>
     <button>Save</button>
 </body>
+
 </html>
