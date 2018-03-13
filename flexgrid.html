@@ -18,6 +18,32 @@
         }
 
         @media (min-width: 576px) {
+            body {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 20px;
+            }
+            
+            label.left {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+
+            label.right {
+                grid-column-start: 2;
+            }
+            
+            label[for="profile-image"] {
+                grid-row-start: 1;
+                grid-row-end: 3;
+                margin: auto;
+            }
+            
+            button {
+                grid-column-start: 2;
+                grid-colomn-end: 2;
+                margin: auto;
+            }
         }
     </style>
 </head>
@@ -25,22 +51,22 @@
     <label for="first-name">First Name
         <input type="text" id="first-name" name="first_name">
     </label>
-    <label for="last-name">Last Name
+    <label for="last-name" class="left">Last Name
         <input type="text" id="last-name" name="last_name">
     </label>
-    <label for="profile-image">Profile Image
+    <label for="profile-image" class="right">Profile Image
         <input type="file" id="profile-image" name="profile_image">
     </label>
     <label for="email">Email
         <input type="email" id="email" name="email">
     </label>
-    <label for="phone">Phone
+    <label for="phone" class="right">Phone
         <input type="text" id="phone" name="phone">
     </label>
     <label for="web-site">Web site
         <input type="text" id="web-site" name="web_site">
     </label>
-    <label for="quote">Quote
+    <label for="quote" class="right">Quote
         <textarea id="quote" name="quote"></textarea>
     </label>
     <button>Save</button>
