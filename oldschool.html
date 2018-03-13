@@ -7,6 +7,13 @@
     <title>Old School</title>
     <link href="common.css" rel="stylesheet">
     <style>
+        body {
+            max-width: 960px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+        }
+
         label,
         input,
         textarea {
@@ -25,24 +32,30 @@
 
         input,
         textarea {
-            width: calc(100vw - 66px);
+            max-width: 380px;
+            width: calc(100% - 66px);
+            margin-left: auto;
+            margin-right: auto;
         }
 
         #profile-image {
-            height: 30px;
+            height: 100px;
+            border: 1px solid lightgrey;
         }
 
         button {
             margin-left: auto;
             margin-right: auto;
             display: block;
-            width: 100%;
+            width: calc(100% - 44px);
+            max-width: 400px;
+            padding: 10px
         }
 
         @media (min-width: 576px) {
             input,
             textarea {
-                width: calc(100% - 66px);
+                max-width: initial;
             }
 
             label {
@@ -52,12 +65,16 @@
             .right {
                 position: absolute;
                 left: 50%;
+                margin-top: -150px;
+            }
+            .right~.right {
                 margin-top: -75px;
             }
 
             button {
-                margin-right: 25px;
-                width: calc(50% - 25px);
+                margin-right: 20px;
+                width: calc(50% - 40px);
+                max-width: initial;
             }
         }
     </style>
